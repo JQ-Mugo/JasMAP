@@ -3,7 +3,6 @@ JasMAP is a Python based software package, that jointly models local ancestry an
 Author: Jacquiline W. Mugo
 2023
 
-################################################################################################################################################################
 __DEPENDANCY__
 ----------
 
@@ -18,9 +17,6 @@ scipy - linalg,stats,optimize
 USAGE: 
 -------
 python JasMAP.py <parameter_file.txt>
-
-#################################################################################################################################################################
-
 parameter_file.txt: list of main parameters passed to the JasMAP.py
 
 
@@ -78,8 +74,6 @@ no_of_snps:<X>[integer]				- The total number of SNPs in the analysis for all th
 outfolder:/PATH/INFOLDER/			- Path to folder where the ouput will be written.
 
 
-#############################################################################################################################################################
-
 OUTPUT files
 ------------
 
@@ -96,7 +90,6 @@ Jasmap.Joint.assoc				- The Joint association output. File has 7 columns.
                                                   SNP_Pval - the p-value of the genotype-only association.
                                                   Joint_PPA - The joint posterior probability of association.
 
-#############################################################################################################################################################
 # CITATION
 Mugo, J.W., Mulder, N.J. and Chimusa, E.R., 2023. 
 
