@@ -1,0 +1,14 @@
+############################################################################################################################
+#															   #
+#						JasMAP PARAMETER LIST                                                      #
+#					   (Keep the structure of the list)						   #	
+############################################################################################################################
+infolder:/mnt/lustre/users/jmugo/JasMAP/Jasmap_bin/online_version/test_data
+lanc_file:test.Viterbi.txt
+geno_file:test.geno
+pheno_file:test.pheno
+covariates_file:test.eigenvec
+no_of_ancs:3
+AM_eff_no_tests:10
+no_of_snps:15
+outfolder:/mnt/lustre/users/jmugo/JasMAP/Jasmap_bin/online_version/test_data/
