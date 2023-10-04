@@ -3,7 +3,7 @@ JasMAP is a Python based software package, that jointly models local ancestry an
 Author: Jacquiline W. Mugo
 2023
 
-#############################################################################################################################################
+##################################################################################################################################
 __DEPENDANCY__
 ----------
 
@@ -20,12 +20,13 @@ USAGE:
 python JasMAP.py <parameter_file.txt>
 parameter_file.txt: list of main parameters passed to the JasMAP.py
 
-##############################################################################################################################################
+###################################################################################################################################
 INPUT PARAMETERS DESCRIPTION:
 -----------------------
 
 infolder:/PATH/INFOLDER/			- path to input files' folder
-lanc_file:<lanc_file>				- local ancestry inferences (LAI) with rows = No. of SNPs, columns = No. of Haplotypes
+lanc_file:<lanc_file>				- local ancestry inferences (LAI).
+                                                  Rows = No. of SNPs, Columns = No. of Haplotypes
             					  samples input: 
 						  
 						  2 1 3 1 1 1
@@ -34,8 +35,8 @@ lanc_file:<lanc_file>				- local ancestry inferences (LAI) with rows = No. of SN
                                                  
                                                   The sample LAI belongs to a 3-way admixed population as the largest ancestry label is 3.
 						  1, 2, and 3 labeling indicates ancestral population 1,2, and 3 respectively.
-                                                  There are 3 SNPs in the study (No. of rows) and 3 samples (No. of columns indicating 6 haplotypes, 
-                                                  thus 3 samples).
+                                                  There are 3 SNPs in the study (No. of rows) and 3 samples (No. of columns indicating 
+                                                  6 haplotypes, thus 3 samples).
 						  
 						  	
 geno_file:<geno_file>				- genotypes files. Rows = No. of SNPs, Columns = No. of Samples
@@ -49,8 +50,8 @@ geno_file:<geno_file>				- genotypes files. Rows = No. of SNPs, Columns = No. of
 
 pheno_file:<pheno_file>				- phenotype information in 1 column, 1-case, 2-control. The number of rows = no. of samples.
 
-covariates_file:<covarites_file>		- The covariate file, age, gender, principal component axis, etc. The first 2 row are the family ID and sample ID. 
-						  File has NO header.
+covariates_file:<covarites_file>		- The covariate file, age, gender, principal component axis, etc. The first 2 row are the 
+                                                  family ID and sample ID. File has NO header.
                                                   sample input:
 
 						  ADM	ID1 0.213  1 
@@ -65,7 +66,8 @@ no_of_ancs:<X>[integer]				- The number of parental ancestries.
 
 AM_eff_no_tests:<X>[integer]			- Effective number of tests for the admixture association analysis. 
                                                   Use the script get_effective_no_AM.py to obtain this input.
-                                                  The script can be run per chromosome and the sum over all the chromosomes used as the input for the analysis.
+                                                  The script can be run per chromosome and the sum over all the chromosomes used as the input 
+                                                  for the analysis.
 
 						  USAGE: python get_effective_no_AM.py <lanc_file> <sample_size>
 
@@ -78,8 +80,8 @@ outfolder:/PATH/INFOLDER/			- Path to folder where the ouput will be written.
 OUTPUT files
 ------------
 
-Jasmap.ANC<k>.AM.assoc				- The ancestry association files with 3 columns, SNP_ID, beta, p-value. <k> denotes each of the ancestral 
-                                                  populations.
+Jasmap.ANC<k>.AM.assoc				- The ancestry association files with 3 columns, SNP_ID, beta, p-value. <k> denotes each of the
+                                                  ancestral populations.
 
 Jasmap.Joint.assoc				- The Joint association output. File has 7 columns.
 
